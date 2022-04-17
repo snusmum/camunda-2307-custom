@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  app:
+    image: 'camunda:latest'
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    container_name: pen-order-service
